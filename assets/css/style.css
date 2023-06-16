@@ -9,6 +9,8 @@ body {
 }
 
 .cabecalho {
+  display: flex;
+  justify-content: center;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -16,6 +18,7 @@ body {
 .cabecalho .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .cabecalho figure img {
@@ -29,6 +32,9 @@ body {
 }
 
 .secaoDetalhesConta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 60px 0 30px;
 }
@@ -67,18 +73,28 @@ body {
 }
 
 .secaoDetalhesConta__sobreSaldo p strong {
+  margin-top: 0.5rem;
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
   display: block;
   font-weight: 600;
 }
 
 .secaoDetalhesConta__sobreSaldo button {
-  background-color: #fff;
+  background-color: #d7d7d7;
   border: none;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 60px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.secaoDetalhesConta__sobreSaldo button:hover {
+  background-color: white;
+
 }
 
 .secaoDetalhesConta__opcoesTransacoes {
@@ -108,6 +124,9 @@ body {
 }
 
 .secaoTransacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border-radius: 20px 20px 0 0;
   border-bottom: 15px solid #f0f0f0;
@@ -150,12 +169,26 @@ body {
   margin: 50px 0 20px;
   padding: 15px 150px;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.secaoTransacao__qrCode button:hover {
+  background-color: #419e68;
+
 }
 
 .secaoTransacao__qrCode a {
   display: block;
   color: #000;
   font-weight: bold;
+}
+
+.secaoTransacao__pix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
 }
 
 .secaoTransacao__pix img {
@@ -183,6 +216,9 @@ body {
 }
 
 .secaoTransacao__boleto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .secaoTransacao__boleto img {
@@ -213,6 +249,10 @@ body {
 }
 
 .secaoTransacao__cobrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .secaoTransacao__cobrar img {
   width: 100%;
@@ -235,6 +275,8 @@ body {
 }
 
 .rodape {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
 }
 
